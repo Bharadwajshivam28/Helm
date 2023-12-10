@@ -1,0 +1,14 @@
+replicaCount: 1
+
+image:
+  repository: deekshithsn/ui
+  pullPolicy: IfNotPresent
+
+service:
+  type: NodePort
+  port: 8080
+  name: ui
+  targetPort: 8080
+
+container:
+  name: "react-ui"
